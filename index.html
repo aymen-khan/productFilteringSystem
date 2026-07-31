@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaTech Store</title>
+
+  <!-- Our CSS file. All the visual styling lives here. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <!-- Just a simple top bar with the store name -->
+  <header class="site-header">
+    <div class="logo">Nova<span>Tech</span></div>
+    <p class="tagline">Find the right tech, faster.</p>
+  </header>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="page">
+
+    <!-- ---------- CONTROLS BAR ---------- -->
+    <!-- This is where the user types a search term,
+         picks a category, and picks a sort order.
+         Every input here has an id so script.js can grab it. -->
+    <section class="controls" aria-label="Product filters">
+
+      <!-- Search box -->
+      <div class="control-group">
+        <label for="searchInput">Search</label>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search products…"
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Category dropdown -->
+      <div class="control-group">
+        <label for="categorySelect">Category</label>
+        <select id="categorySelect">
+          <option value="all">All categories</option>
+          <!-- Other <option> tags get added automatically by script.js,
+               so we never have to hardcode categories twice. -->
+        </select>
+      </div>
+
+      <!-- Sort dropdown -->
+      <div class="control-group">
+        <label for="sortSelect">Sort by price</label>
+        <select id="sortSelect">
+          <option value="default">Default order</option>
+          <option value="low-high">Price: Low to High</option>
+          <option value="high-low">Price: High to Low</option>
+        </select>
+      </div>
+
+    </section>
+
+    <!-- ---------- RESULTS COUNT ---------- -->
+    <!-- Small line of text that always tells the user how many
+         products are currently showing. Updated live by script.js -->
+    <p class="results-count" id="resultsCount">Showing all products</p>
+
+    <!-- ---------- PRODUCT GRID ---------- -->
+    <!-- This div starts EMPTY on purpose.
+         script.js builds every product card with JavaScript
+         and injects them in here. This is what "render dynamically" means. -->
+    <section class="product-grid" id="productGrid">
+      <!-- Product cards get inserted here by JavaScript -->
+    </section>
+
+    <!-- ---------- EMPTY STATE ---------- -->
+    <!-- Hidden by default. Only shown when a search/filter
+         combination matches zero products. -->
+    <div class="empty-state" id="emptyState" hidden>
+      <p>No products match your filters.</p>
+      <button id="clearFiltersBtn">Clear all filters</button>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; NovaTech Store</p>
+  </footer>
+
+  <!-- Our JavaScript file. Loaded at the END of the body so the
+       HTML above is already parsed before the script tries to touch it. -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  { "id": 1,  "name": "Wireless Earbuds",    "category": "Audio",       "price": 3999,  "image": "images/img1.png",  "description": "Compact true-wireless earbuds with noise isolation." },
+  { "id": 2,  "name": "Bluetooth Speaker",   "category": "Audio",       "price": 2799,  "image": "images/img2.png",  "description": "Portable speaker with 12-hour battery life." },
+  { "id": 3,  "name": "Studio Headphones",   "category": "Audio",       "price": 6999,  "image": "images/img3.png",  "description": "Over-ear headphones tuned for studio monitoring." },
+  { "id": 4,  "name": "Mechanical Keyboard", "category": "Accessories", "price": 5199,  "image": "images/img4.png",  "description": "Hot-swappable switches with per-key RGB lighting." },
+  { "id": 5,  "name": "Wireless Mouse",      "category": "Accessories", "price": 1899,  "image": "images/img5.png",  "description": "Ergonomic mouse with silent-click buttons." },
+  { "id": 6,  "name": "USB-C Hub",           "category": "Accessories", "price": 1499,  "image": "images/img6.png",  "description": "7-in-1 hub with HDMI, SD card, and USB-A ports." },
+  { "id": 7,  "name": "27\" 4K Monitor",     "category": "Displays",    "price": 19999, "image": "images/img7.png",  "description": "Ultra-sharp 4K panel with 99% sRGB coverage." },
+  { "id": 8,  "name": "Portable Monitor",    "category": "Displays",    "price": 10499, "image": "images/img8.png",  "description": "Slim 15.6\" screen that powers over USB-C." },
+  { "id": 9,  "name": "Smartwatch",          "category": "Wearables",   "price": 7999,  "image": "images/img9.png",  "description": "Tracks heart rate, sleep, and workouts." },
+  { "id": 10, "name": "Fitness Band",        "category": "Wearables",   "price": 2399,  "image": "images/img10.png", "description": "Lightweight tracker with 10-day battery life." },
+  { "id": 11, "name": "Webcam 1080p",        "category": "Accessories", "price": 2199,  "image": "images/img11.png", "description": "Crisp 1080p webcam with a built-in privacy shutter." },
+  { "id": 12, "name": "Laptop Stand",        "category": "Accessories", "price": 1199,  "image": "images/img12.png", "description": "Adjustable aluminum stand for better posture." }
+]
